@@ -388,6 +388,7 @@ const Hero = ({ setIsOpen }) => {
           loop
           muted
           playsInline
+          poster="/images/hero/placehoder.webp"
           onEnded={(e) => e.currentTarget.play()}
           className="w-full h-full object-cover block"
           src="/images/hero/walkthrough_tour.mp4"
@@ -401,6 +402,7 @@ const Hero = ({ setIsOpen }) => {
           loop
           muted
           playsInline
+          poster="/images/hero/placehoder.webp"
           onEnded={(e) => e.currentTarget.play()}
           className="w-full h-full object-cover block"
           src="/images/hero/walkthrough_tour.mp4"
@@ -420,7 +422,7 @@ const Hero = ({ setIsOpen }) => {
 
         {/* Subtitle */}
         <p className="hero-subtitle">
-          <span style={{ fontSize: '0.9em', fontWeight: 600, textTransform: 'none', color: '#fff' }}>On Bengaluru Airport Road, near the toll gate.</span>
+          <span style={{ fontSize: '0.9em', fontWeight: 600, textTransform: 'none', color: '#fff' }}>On Bengaluru Airport Road,Near The Toll Gate.</span>
         </p>
         
         {/* Bullet Points */}
@@ -446,10 +448,13 @@ const Hero = ({ setIsOpen }) => {
         <p className="hero-price-line" style={{ marginBottom: '0px' }}>
           Luxurious 3.5 BHK Homes
           <span style={{ marginLeft: '6px', marginRight: '6px' }}>
-            Price Starts
+            From
           </span>
           <span className="hero-price-amt" style={{ fontSize: 'clamp(18px, 2vw, 24px)', lineHeight: '1', verticalAlign: 'baseline' }}>
             ₹ 2 Cr*
+          </span>
+          <span style={{ marginLeft: '6px', marginRight: '6px' }}>
+            Onwards
           </span>
         </p>
 
