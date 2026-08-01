@@ -44,8 +44,8 @@ const nephilm = localFont({
 
 export const metadata = {
   metadataBase: new URL('https://sattvacitybangalore.com'),
-  title: 'Sattva City Bangalore | 2, 3 & 4 BHK Luxury Homes on Airport Road',
-  description: 'Discover Sattva City on Bengaluru Airport Road, near the toll gate. A 50-acre luxury township offering 2, 3 & 4 BHK residences starting at ₹1.75 Cr* with 4 grand clubhouses & 250+ amenities.',
+  title: 'Sattva City Bangalore | 3.5 BHK Luxury Homes on Airport Road',
+  description: 'Discover Sattva City on Bengaluru Airport Road, near the toll gate. A 50-acre luxury township offering 3.5 BHK residences starting at ₹1.75 Cr* with 4 grand clubhouses & 250+ amenities.',
   icons: {
     icon: faviconImage,
     shortcut: faviconImage,
@@ -55,8 +55,8 @@ export const metadata = {
     canonical: 'https://sattvacitybangalore.com',
   },
   openGraph: {
-    title: 'Sattva City Bangalore | 2, 3 & 4 BHK Luxury Homes on Airport Road',
-    description: 'Discover Sattva City on Bengaluru Airport Road, near the toll gate. A 50-acre luxury township offering 2, 3 & 4 BHK residences starting at ₹1.75 Cr* with 4 grand clubhouses & 250+ amenities.',
+    title: 'Sattva City Bangalore | 3.5 BHK Luxury Homes on Airport Road',
+    description: 'Discover Sattva City on Bengaluru Airport Road, near the toll gate. A 50-acre luxury township offering 3.5 BHK residences starting at ₹1.75 Cr* with 4 grand clubhouses & 250+ amenities.',
     url: 'https://sattvacitybangalore.com',
     siteName: 'Sattva City Bangalore',
     images: [
@@ -72,8 +72,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sattva City Bangalore | 2, 3 & 4 BHK Luxury Homes on Airport Road',
-    description: 'Discover Sattva City on Bengaluru Airport Road, near the toll gate. A 50-acre luxury township offering 2, 3 & 4 BHK residences starting at ₹1.75 Cr* with 4 grand clubhouses & 250+ amenities.',
+    title: 'Sattva City Bangalore | 3.5 BHK Luxury Homes on Airport Road',
+    description: 'Discover Sattva City on Bengaluru Airport Road, near the toll gate. A 50-acre luxury township offering 3.5 BHK residences starting at ₹1.75 Cr* with 4 grand clubhouses & 250+ amenities.',
     images: ['/projects/iris-tower.jpg'],
   },
 }
