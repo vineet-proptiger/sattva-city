@@ -43,7 +43,7 @@ const nephilm = localFont({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://sattvacitybangalore.com'),
+  metadataBase: new URL('http://sattvacitydoddajala.co.in'),
   title: 'Sattva City Bangalore | 3.5 BHK Luxury Homes on Airport Road',
   description: 'Discover Sattva City on Bengaluru Airport Road, near the toll gate. A 50-acre luxury township offering 3.5 BHK residences starting at ₹1.75 Cr* with 4 grand clubhouses & 250+ amenities.',
   icons: {
@@ -52,12 +52,12 @@ export const metadata = {
     apple: faviconImage,
   },
   alternates: {
-    canonical: 'https://sattvacitybangalore.com',
+    canonical: 'http://sattvacitydoddajala.co.in',
   },
   openGraph: {
     title: 'Sattva City Bangalore | 3.5 BHK Luxury Homes on Airport Road',
     description: 'Discover Sattva City on Bengaluru Airport Road, near the toll gate. A 50-acre luxury township offering 3.5 BHK residences starting at ₹1.75 Cr* with 4 grand clubhouses & 250+ amenities.',
-    url: 'https://sattvacitybangalore.com',
+    url: 'http://sattvacitydoddajala.co.in',
     siteName: 'Sattva City Bangalore',
     images: [
       {
@@ -96,9 +96,9 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "RealEstateAgent",
               "name": "Sattva City Bangalore",
-              "url": "https://sattvacitybangalore.com",
-              "logo": "https://sattvacitybangalore.com/projects/iris-tower.jpg",
-              "image": "https://sattvacitybangalore.com/projects/iris-tower.jpg",
+              "url": "http://sattvacitydoddajala.co.in",
+              "logo": "http://sattvacitydoddajala.co.in/projects/iris-tower.jpg",
+              "image": "http://sattvacitydoddajala.co.in/projects/iris-tower.jpg",
               "description": "Sattva City, Bangalore's premier 50-acre luxury township on Bengaluru Airport Road, near the toll gate, offering luxurious 3.5 BHK residences.",
               "address": {
                 "@type": "PostalAddress",
@@ -111,7 +111,7 @@ export default function RootLayout({ children }) {
               "telephone": "+919718344024",
               "priceRange": "₹ 1.75 Cr Onwards",
               "sameAs": [
-                "https://sattvacitybangalore.com"
+                "http://sattvacitydoddajala.co.in"
               ]
             })
           }}

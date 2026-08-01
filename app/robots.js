@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://sattvacitybangalore.com/sitemap.xml',
+    sitemap: 'http://sattvacitydoddajala.co.in/sitemap.xml',
   }
 }

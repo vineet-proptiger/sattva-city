@@ -390,7 +390,7 @@ const Hero = ({ setIsOpen }) => {
           playsInline
           onEnded={(e) => e.currentTarget.play()}
           className="w-full h-full object-cover block"
-          src="/walkthrough_tour.mp4"
+          src="/images/hero/walkthrough_tour.mp4"
         />
       </div>
 
@@ -403,7 +403,7 @@ const Hero = ({ setIsOpen }) => {
           playsInline
           onEnded={(e) => e.currentTarget.play()}
           className="w-full h-full object-cover block"
-          src="/walkthrough_tour.mp4"
+          src="/images/hero/walkthrough_tour.mp4"
         />
       </div>
 

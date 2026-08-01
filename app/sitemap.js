@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://sattvacitybangalore.com'
+  const baseUrl = 'http://sattvacitydoddajala.co.in'
   return [
     {
       url: baseUrl,
@@ -12,12 +12,6 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/privacy-policy`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.3,
     },
   ]
 }
