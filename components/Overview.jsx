@@ -1,0 +1,223 @@
+'use client'
+import React, { useState } from 'react'
+import Image from 'next/image'
+import { overviewImage } from '../lib/images'
+
+const Overview = ({ setIsOpen }) => {
+  const [isExpanded, setIsExpanded] = useState(false)
+
+  return (
+  <section
+    id="overview"
+    className="about_us about-us-section"
+  >
+    <style jsx>{`
+      .about-us-section {
+        box-sizing: border-box;
+        padding: 70px 0px;
+        position: relative;
+        background: #f4ebe4;
+        overflow: hidden;
+      }
+      .logoicon {
+        width: 25%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.15;
+        z-index: 0;
+        pointer-events: none;
+      }
+      .icon_logo_anim {
+        animation: logoAnim 20s linear infinite;
+        width: 100%;
+        height: auto;
+      }
+      @keyframes logoAnim {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .inner-section {
+        position: relative;
+        z-index: 1;
+        padding-right: 30px;
+      }
+      .heading {
+        color: #000242;
+        font-family: "Montserrat", sans-serif;
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 56px;
+        text-transform: uppercase;
+        letter-spacing: .02em;
+        margin-bottom: 30px;
+      }
+      .about-us-section p {
+        text-align: left;
+        margin-bottom: 25px;
+        color: #000242;
+        font-family: "Poppins", sans-serif;
+        font-size: 17px;
+        line-height: 1.8;
+      }
+      .about-us-section p.boldp {
+        margin-top: 35px;
+        font-weight: 500;
+        font-size: 19px;
+        margin-bottom: 25px;
+      }
+      .about-us-section ul {
+        padding-left: 0;
+        list-style-type: none;
+        margin-bottom: 45px;
+        color: #000242;
+        font-family: "Poppins", sans-serif;
+        font-size: 17px;
+        line-height: 1.8;
+      }
+      .about-us-section ul li {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 14px;
+      }
+      .about-us-section ul li:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 12px;
+        width: 6px;
+        height: 6px;
+        background-color: #000242;
+        border-radius: 50%;
+      }
+      .theme_btn1 {
+        padding: 15px 32px;
+        background: #000242;
+        color: #FFF;
+        line-height: 1;
+        position: relative;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        letter-spacing: 0.5px;
+      }
+      .theme_btn1:hover {
+        background: #d3be8a;
+        color: #000242;
+      }
+      .image_caption_wrap img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      @media (max-width: 991px) {
+        .inner-section {
+          padding-right: 0;
+          margin-bottom: 40px;
+        }
+        .heading {
+          font-size: 32px;
+          line-height: 40px;
+        }
+        .logoicon {
+          width: 50%;
+        }
+      }
+    `}</style>
+
+    <div className="container mx-auto px-4 sm:px-8 max-w-[1300px] relative z-10">
+      <div className="flex flex-col lg:flex-row lg:items-start items-center">
+        
+        {/* Left Side: Text Content */}
+        <div className="w-full lg:w-7/12 pr-0 lg:pr-8">
+          <div className="inner-section" data-aos="fade-up" data-aos-duration="1000">
+            <h2 className="text-[22px] sm:text-[28px] md:text-[36px] font-semibold leading-tight uppercase tracking-wider text-gray-900" data-aos="fade-up" data-aos-duration="1000" style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif", marginBottom: '10px' }}>Overview</h2>
+            {/* Decorative Line */}
+            <div className="flex items-center justify-start mt-2 mb-6" data-aos="fade-up" data-aos-duration="1000">
+              <div className="w-16 h-[1px] bg-[#7d9b93]"></div>
+              <div className="w-2 h-2 rounded-full bg-[#7d9b93] mx-3"></div>
+              <div className="w-16 h-[1px] bg-[#7d9b93]"></div>
+            </div>
+            
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" style={{
+              fontSize: '16px',
+              fontFamily: '"Poppins", sans-serif',
+              color: '#333',
+              textAlign: 'justify',
+              lineHeight: '1.8',
+              marginBottom: '24px',
+              transition: 'all 0.3s ease'
+            }}>
+              Sattva City is an expansive 50-acre luxury township by Sattva Group, strategically located in Sadahalli, North Bengaluru, one of the city&apos;s fastest-growing residential corridors. Designed to offer a harmonious blend of nature and modern living, the township features 84% lush open green spaces, creating a serene environment for families seeking a healthier lifestyle. The project offers thoughtfully designed premium 3.5 BHK residences starting from ₹2 Cr*, with spacious layouts, abundant natural light, and contemporary architecture.
+              {!isExpanded ? (
+                <>
+                  <span> </span>
+                  <span
+                    onClick={() => setIsExpanded(true)}
+                    className="text-[#000242] font-bold text-[15px] cursor-pointer hover:text-[#C9A96E] hover:underline inline-flex items-center ml-1 whitespace-nowrap transition-colors duration-200"
+                  >
+                    Read More ▼
+                  </span>
+                </>
+              ) : (
+                <>
+                  <br /><br />
+                  <span>Residents can enjoy an unmatched lifestyle with 4 grand clubhouses, 250+ world-class lifestyle amenities, landscaped gardens, fitness zones, sports facilities, children&apos;s play areas, and recreational spaces crafted for every age group. Located just minutes from Kempegowda International Airport, Sattva City offers seamless connectivity to major business hubs, IT parks, educational institutions, healthcare centres, and upcoming infrastructure developments. Whether you&apos;re looking for a dream home or a future-ready investment, Sattva City combines premium living, excellent connectivity, and nature-inspired surroundings to deliver an exceptional lifestyle in the heart of North Bengaluru. Experience luxury, comfort, and convenience in a township designed to redefine urban living. </span>
+                  <span
+                    onClick={() => setIsExpanded(false)}
+                    className="text-[#000242] font-bold text-[15px] cursor-pointer hover:text-[#C9A96E] hover:underline inline-flex items-center ml-1 whitespace-nowrap transition-colors duration-200"
+                  >
+                    Read Less ▲
+                  </span>
+                </>
+              )}
+            </p>
+            
+            <p className="boldp" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" style={{ fontSize: '15px', fontFamily: '"Poppins", sans-serif', fontWeight: '600', color: '#333', marginBottom: '28px' }}>
+              Register Your Interest Today to Access Exclusive Offers, Pricing &amp; Priority Unit Selection.
+            </p>
+            
+            {/* Info Boxes */}
+            <div 
+              className="flex flex-col md:flex-row border border-[#d3be8a] rounded-xl overflow-hidden w-full shadow-sm" 
+              data-aos="fade-up" 
+              data-aos-duration="1000" 
+              data-aos-delay="200"
+            >
+              <div className="w-full md:w-1/2 border-b md:border-b-0 md:border-r border-[#d3be8a] flex flex-col justify-center bg-[#fdfbf7]" style={{ padding: '16px 24px' }}>
+                <p style={{ color: '#7a7a7a', fontSize: '11px', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '4px', fontWeight: '600' }}>Township Area</p>
+                <h3 style={{ color: '#000242', fontSize: '14px', fontWeight: '700', textTransform: 'uppercase', lineHeight: '1.4' }}>50 ACRES</h3>
+              </div>
+              <div className="w-full md:w-1/2 flex flex-col justify-center bg-[#fdfbf7]" style={{ padding: '16px 24px' }}>
+                <p style={{ color: '#7a7a7a', fontSize: '11px', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '4px', fontWeight: '600' }}>Configurations:</p>
+                <h3 style={{ color: '#000242', fontSize: '14px', fontWeight: '700', textTransform: 'uppercase', lineHeight: '1.4' }}>LUXURIOUS 3.5 BHK HOMES<br/>STARTING AT ₹ 2 CR*</h3>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {/* Right Side: Image */}
+        <div className="w-full lg:w-5/12 mt-10 lg:mt-0 flex justify-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div className="image_caption_wrap relative w-full flex justify-center">
+            <img 
+              src={overviewImage} 
+              alt="Sattva City Bangalore Overview" 
+              className="w-full h-auto rounded-xl shadow-2xl max-w-[500px] lg:max-w-[340px] xl:max-w-[360px] mx-auto object-cover transition-all duration-300"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  )
+}
+
+export default Overview
