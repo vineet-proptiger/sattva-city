@@ -9,15 +9,43 @@ const units = [
     type: "3.5 BHK",
     subtitle: "LUXURY RESIDENCES",
     size: "1,525 Sq.Ft.",
+    priceLabel: "STARTING AT",
     price: "₹ 2 Cr*",
     btnText: "GET DETAILS",
     features: [
       "Unlock Pricing & Floor Plans",
-      // "10:20:70 Payment Plan Structure",
       "84% Open Green Spaces",
       "4 Grand Luxury Clubhouses",
     ],
-    isPopular: true,
+    isPopular: false,
+  },
+  {
+    type: "4BHK+4T+SER.RM",
+    subtitle: "BLOCK - 01, 02, 03 & 04",
+    size: "1,863 Sq.Ft.",
+    priceLabel: "PRICE DETAILS",
+    price: "On Request",
+    btnText: "GET DETAILS",
+    features: [
+      "Unlock Pricing & Floor Plans",
+      "84% Open Green Spaces",
+      "4 Grand Luxury Clubhouses",
+    ],
+    isPopular: false,
+  },
+  {
+    type: "4BHK+4T+SER.RM",
+    subtitle: "BLOCK - 04",
+    size: "3,730 Sq.Ft.",
+    priceLabel: "EXCLUSIVE PRICE",
+    price: "On Request",
+    btnText: "GET DETAILS",
+    features: [
+      "Unlock Pricing & Floor Plans",
+      "84% Open Green Spaces",
+      "4 Grand Luxury Clubhouses",
+    ],
+    isPopular: false,
   }
 ];
 
@@ -59,7 +87,7 @@ const Pricing = ({ setIsOpen }) => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="relative flex justify-center items-center max-w-[1100px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 lg:gap-8 max-w-[1150px] mx-auto">
 
           {units.map((unit, idx) => (
             <div
@@ -84,9 +112,9 @@ const Pricing = ({ setIsOpen }) => {
                   <BedDouble size={24} color={unit.isPopular ? GOLD : THEME_BLUE} strokeWidth={1.5} />
                 </div>
                 
-                <h3 className="text-[20px] font-bold text-center leading-tight mb-2 relative z-10 text-gray-800 tracking-wide" style={{ fontFamily: F_SANS }}>
+                <h3 className="text-[19px] sm:text-[20px] font-bold text-center leading-tight mb-2 relative z-10 text-gray-800 tracking-wide" style={{ fontFamily: F_SANS }}>
                   {unit.type} <br /> 
-                  <span className="text-[14px] font-semibold">{unit.subtitle}</span>
+                  <span className="text-[13px] sm:text-[14px] font-semibold">{unit.subtitle}</span>
                 </h3>
                 <p className="text-[11.5px] font-medium text-gray-600 relative z-10 mt-1.5" style={{ fontFamily: F_SANS }}>
                   <span className="font-bold text-gray-800">Carpet Area :</span> {unit.size}
@@ -95,8 +123,8 @@ const Pricing = ({ setIsOpen }) => {
 
               {/* Price Section */}
               <div className="text-center mb-6 h-[70px] flex flex-col justify-end">
-                <p className="text-[10px] text-gray-500 font-bold tracking-widest uppercase mb-1" style={{ fontFamily: F_SANS }}>Starting At</p>
-                <p className={`text-[28px] font-bold ${unit.isPopular ? 'text-[#c28522]' : 'text-[#000242]'}`} style={{ fontFamily: F_SANS }}>
+                <p className="text-[10px] text-gray-500 font-bold tracking-widest uppercase mb-1" style={{ fontFamily: F_SANS }}>{unit.priceLabel || 'STARTING AT'}</p>
+                <p className={`text-[26px] sm:text-[28px] font-bold ${unit.isPopular ? 'text-[#c28522]' : 'text-[#000242]'}`} style={{ fontFamily: F_SANS }}>
                   {unit.price}
                 </p>
               </div>

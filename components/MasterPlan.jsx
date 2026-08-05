@@ -11,6 +11,22 @@ const plans = [
         carpet: '1,525 Sq.Ft.'
     }
   },
+  { 
+    label: '4 BHK + 4T Residence', 
+    img: masterplanImages.bhk4 || '/images/masterplan/4BHK+4Tfloorplan.webp',
+    details: {
+        saleable: '2,975 Sq.Ft.',
+        carpet: '1,863 Sq.Ft.'
+    }
+  },
+  { 
+    label: '4 BHK Duplex Penthouse', 
+    img: masterplanImages.penthouse4 || '/images/masterplan/4BHK+4T2floorplan.webp.webp',
+    details: {
+        saleable: '6,266 Sq.Ft.',
+        carpet: '3,730 Sq.Ft.'
+    }
+  },
 ]
 
 const MasterPlan = ({ setIsOpen }) => {
@@ -61,7 +77,7 @@ const MasterPlan = ({ setIsOpen }) => {
         </div>
 
         {/* Tab Content */}
-        <div className="max-w-[1100px] mx-auto">
+        <div className="max-w-[1240px] mx-auto">
           {activeTab === 'master' && (
             <div className="w-full max-w-[820px] mx-auto bg-white rounded-md overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.1)] p-4" data-aos="zoom-in" data-aos-duration="1000">
               <div onClick={() => setLightboxImg(masterplanImages.masterPlan)} className="cursor-pointer block relative overflow-hidden group bg-[#fdfbf7]">
@@ -75,18 +91,18 @@ const MasterPlan = ({ setIsOpen }) => {
           )}
 
           {activeTab === 'floor' && (
-            <div className="flex justify-center items-center gap-8 max-w-[1100px] mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-[1240px] mx-auto">
               {plans.map((plan, idx) => (
-                <div key={idx} className="w-full max-w-[360px] bg-white rounded-md overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.1)] transition-transform hover:-translate-y-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={idx * 100}>
-                  <div onClick={() => setLightboxImg(plan.img)} className="cursor-pointer block relative h-[260px] overflow-hidden group bg-[#fdfbf7] flex items-center justify-center p-4">
+                <div key={idx} className="w-full bg-white rounded-md overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.1)] transition-transform hover:-translate-y-1 flex flex-col justify-between" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={idx * 100}>
+                  <div onClick={() => setLightboxImg(plan.img)} className="cursor-pointer relative h-[260px] overflow-hidden group bg-[#fdfbf7] flex items-center justify-center p-4">
                     <img 
                       src={plan.img} 
                       alt={plan.label} 
                       className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" 
                     />
                   </div>
-                  <div className="p-6 text-center border-t border-gray-100 bg-white">
-                    <h4 className="text-[22px] text-[#000242] font-semibold mb-3">{plan.label}</h4>
+                  <div className="p-6 text-center border-t border-gray-100 bg-white flex-1 flex flex-col justify-center">
+                    <h4 className="text-[20px] sm:text-[22px] text-[#000242] font-semibold mb-3">{plan.label}</h4>
                     <div className="flex flex-col gap-1.5">
                       <p className="text-[15px] text-gray-600"><span className="font-semibold text-gray-800">Saleable Area </span>: {plan.details.saleable}</p>
                       <p className="text-[15px] text-gray-600"><span className="font-semibold text-gray-800">Carpet Area </span>: {plan.details.carpet}</p>
