@@ -27,7 +27,7 @@ const Footer = () => (
         </div>
         <p style={{ fontSize: '15px', color: '#fff', fontFamily: 'var(--font-poppins), sans-serif', lineHeight: 1.8, marginBottom: '24px', textAlign: 'justify' }}
           data-aos="fade-in" data-aos-delay="100">
-          Sattva Group presents Sattva City, Bangalore&apos;s premier luxury integrated township on Bengaluru Airport Road, near the toll gate, offering luxurious 3.5 BHK apartments across a sprawling 50-acre master-planned development. Thoughtfully curated with 84% open green spaces, four grand state-of-the-art clubhouses, an indoor temperature-controlled pool, and over 250+ world-class lifestyle amenities — Sattva City brings you a place where the city&apos;s convenience meets a quieter, lighter, and truly elevated way of living.
+          Sattva Group presents Sattva City, Bangalore&apos;s premier luxury integrated township on Bengaluru Airport Road, near the toll gate, offering luxurious 2, 2.5, 3 & 3.5 BHK apartments across a sprawling 50-acre master-planned development. Thoughtfully curated with 84% open green spaces, four grand state-of-the-art clubhouses, an indoor temperature-controlled pool, and over 250+ world-class lifestyle amenities — Sattva City brings you a place where the city&apos;s convenience meets a quieter, lighter, and truly elevated way of living.
         </p>
         
         {/* RERA Block */}

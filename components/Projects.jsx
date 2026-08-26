@@ -179,7 +179,7 @@ const Projects = ({ setIsOpen }) => {
           <div className="w-full lg:w-1/2 project-content-box">
             <h3 className="project-title">SATTVA CITY - RESIDENTIAL</h3>
             <p className="project-desc">
-              The residential sector of Sattva City on Bengaluru Airport Road, near the toll gate, offers luxury 3.5 BHK apartments across a sprawling 50-acre master-planned development. Designed for elevated elegance with breathtaking views and abundant natural light, each residence is crafted with top-tier finishes. Residents enjoy seamless access to four grand clubhouses, 84% open green spaces, an indoor temperature-controlled pool with a dedicated kids zone, and more than 250 premium amenities.
+              The residential sector of Sattva City on Bengaluru Airport Road, near the toll gate, offers luxury 2, 2.5, 3 & 3.5 BHK apartments across a sprawling 50-acre master-planned development. Designed for elevated elegance with breathtaking views and abundant natural light, each residence is crafted with top-tier finishes. Residents enjoy seamless access to four grand clubhouses, 84% open green spaces, an indoor temperature-controlled pool with a dedicated kids zone, and more than 250 premium amenities.
             </p>
             <button
               className="explore-btn"

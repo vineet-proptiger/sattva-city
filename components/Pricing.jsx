@@ -6,11 +6,11 @@ const GOLD = "#c28522";
 
 const units = [
   {
-    type: "3.5 BHK",
+    type: "2 BHK",
     subtitle: "LUXURY RESIDENCES",
-    size: "1,525 Sq.Ft.",
+    size: "1,316 Sq.Ft.",
     priceLabel: "STARTING AT",
-    price: "₹ 2 Cr*",
+    price: "₹ 1.86 Cr*",
     btnText: "GET DETAILS",
     features: [
       "Unlock Pricing & Floor Plans",
@@ -20,9 +20,9 @@ const units = [
     isPopular: false,
   },
   {
-    type: "4BHK+4T+SER.RM",
-    subtitle: "BLOCK - 01, 02, 03 & 04",
-    size: "1,863 Sq.Ft.",
+    type: "2.5 BHK",
+    subtitle: "PREMIUM RESIDENCES",
+    size: "1,580 Sq.Ft.",
     priceLabel: "PRICE DETAILS",
     price: "On Request",
     btnText: "GET DETAILS",
@@ -34,10 +34,24 @@ const units = [
     isPopular: false,
   },
   {
-    type: "4BHK+4T+SER.RM",
-    subtitle: "BLOCK - 04",
-    size: "3,730 Sq.Ft.",
-    priceLabel: "EXCLUSIVE PRICE",
+    type: "3 BHK",
+    subtitle: "PREMIUM RESIDENCES",
+    size: "1,812 Sq.Ft.",
+    priceLabel: "PRICE DETAILS",
+    price: "On Request",
+    btnText: "GET DETAILS",
+    features: [
+      "Unlock Pricing & Floor Plans",
+      "84% Open Green Spaces",
+      "4 Grand Luxury Clubhouses",
+    ],
+    isPopular: true,
+  },
+  {
+    type: "3.5 BHK",
+    subtitle: "ULTRA LUXURY",
+    size: "2,244 Sq.Ft.",
+    priceLabel: "PRICE DETAILS",
     price: "On Request",
     btnText: "GET DETAILS",
     features: [
@@ -67,7 +81,7 @@ const Pricing = ({ setIsOpen }) => {
       id="pricing"
       className="py-16 sm:py-24 px-4 md:px-8 relative overflow-hidden bg-white"
     >
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10">
         
         {/* Section Header */}
         <div className="relative text-center mb-16 md:mb-20" data-aos="fade-up" data-aos-duration="1000"> 
@@ -87,7 +101,7 @@ const Pricing = ({ setIsOpen }) => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 lg:gap-8 max-w-[1150px] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4 lg:gap-6 mx-auto">
 
           {units.map((unit, idx) => (
             <div
@@ -117,7 +131,7 @@ const Pricing = ({ setIsOpen }) => {
                   <span className="text-[13px] sm:text-[14px] font-semibold">{unit.subtitle}</span>
                 </h3>
                 <p className="text-[11.5px] font-medium text-gray-600 relative z-10 mt-1.5" style={{ fontFamily: F_SANS }}>
-                  <span className="font-bold text-gray-800">Carpet Area :</span> {unit.size}
+                  <span className="font-bold text-gray-800">Size :</span> {unit.size}
                 </p>
               </div>
 

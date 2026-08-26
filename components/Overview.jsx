@@ -154,7 +154,7 @@ const Overview = ({ setIsOpen }) => {
               marginBottom: '24px',
               transition: 'all 0.3s ease'
             }}>
-              Sattva City is an expansive 50-acre luxury township by Sattva Group, strategically located in Sadahalli, North Bengaluru, one of the city&apos;s fastest-growing residential corridors. Designed to offer a harmonious blend of nature and modern living, the township features 84% lush open green spaces, creating a serene environment for families seeking a healthier lifestyle. The project offers thoughtfully designed premium 3.5 BHK residences starting from ₹2 Cr*, with spacious layouts, abundant natural light, and contemporary architecture.
+              Sattva City is an expansive 50-acre luxury township by Sattva Group, strategically located in Sadahalli, North Bengaluru, one of the city&apos;s fastest-growing residential corridors. Designed to offer a harmonious blend of nature and modern living, the township features 84% lush open green spaces, creating a serene environment for families seeking a healthier lifestyle. The project offers thoughtfully designed premium 2, 2.5, 3 & 3.5 BHK residences starting from ₹1.86 Cr*, with spacious layouts, abundant natural light, and contemporary architecture.
               {!isExpanded ? (
                 <>
                   <span> </span>
@@ -167,7 +167,7 @@ const Overview = ({ setIsOpen }) => {
                 </>
               ) : (
                 <>
-                  <br /><br />
+                  <span style={{ display: 'block', height: '14px' }}></span>
                   <span>Residents can enjoy an unmatched lifestyle with 4 grand clubhouses, 250+ world-class lifestyle amenities, landscaped gardens, fitness zones, sports facilities, children&apos;s play areas, and recreational spaces crafted for every age group. Located just minutes from Kempegowda International Airport, Sattva City offers seamless connectivity to major business hubs, IT parks, educational institutions, healthcare centres, and upcoming infrastructure developments. Whether you&apos;re looking for a dream home or a future-ready investment, Sattva City combines premium living, excellent connectivity, and nature-inspired surroundings to deliver an exceptional lifestyle in the heart of North Bengaluru. Experience luxury, comfort, and convenience in a township designed to redefine urban living. </span>
                   <span
                     onClick={() => setIsExpanded(false)}
@@ -196,7 +196,7 @@ const Overview = ({ setIsOpen }) => {
               </div>
               <div className="w-full md:w-1/2 flex flex-col justify-center bg-[#fdfbf7]" style={{ padding: '16px 24px' }}>
                 <p style={{ color: '#7a7a7a', fontSize: '11px', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '4px', fontWeight: '600' }}>Configurations:</p>
-                <h3 style={{ color: '#000242', fontSize: '14px', fontWeight: '700', textTransform: 'uppercase', lineHeight: '1.4' }}>LUXURIOUS 3.5 BHK HOMES<br/>STARTING AT ₹ 2 CR*</h3>
+                <h3 style={{ color: '#000242', fontSize: '14px', fontWeight: '700', textTransform: 'uppercase', lineHeight: '1.4' }}>LUXURIOUS 2, 2.5, 3 & 3.5 BHK HOMES<br/>STARTING AT ₹ 1.86 CR*</h3>
               </div>
             </div>
 

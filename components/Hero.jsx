@@ -446,12 +446,12 @@ const Hero = ({ setIsOpen }) => {
 
         {/* Price Line */}
         <p className="hero-price-line" style={{ marginBottom: '0px' }}>
-          Luxurious 3.5 BHK Homes
+          Luxurious 2, 2.5, 3 & 3.5 BHK Homes
           <span style={{ marginLeft: '6px', marginRight: '6px' }}>
             From
           </span>
           <span className="hero-price-amt" style={{ fontSize: 'clamp(18px, 2vw, 24px)', lineHeight: '1', verticalAlign: 'baseline' }}>
-            ₹ 2 Cr*
+            ₹ 1.86 Cr*
           </span>
           <span style={{ marginLeft: '6px', marginRight: '6px' }}>
             Onwards

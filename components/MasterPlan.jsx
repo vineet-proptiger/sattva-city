@@ -4,29 +4,37 @@ import { masterplanImages } from '../lib/images'
 
 const plans = [
   { 
-    label: '3.5 BHK Residence', 
+    label: '2 BHK Residence', 
     img: masterplanImages.bhk35 || '/images/masterplan/3.5floorplan.webp',
     details: {
-        saleable: '2,412 Sq.Ft.',
-        carpet: '1,525 Sq.Ft.'
+        saleable: '1,316 Sq.Ft.',
+        carpet: 'On Request'
     }
   },
   { 
-    label: '4 BHK + 4T Residence', 
+    label: '2.5 BHK Residence', 
+    img: masterplanImages.bhk35 || '/images/masterplan/3.5floorplan.webp',
+    details: {
+        saleable: '1,580 Sq.Ft.',
+        carpet: 'On Request'
+    }
+  },
+  { 
+    label: '3 BHK Residence', 
     img: masterplanImages.bhk4 || '/images/masterplan/4BHK+4Tfloorplan.webp',
     details: {
-        saleable: '2,975 Sq.Ft.',
-        carpet: '1,863 Sq.Ft.'
+        saleable: '1,812 Sq.Ft.',
+        carpet: 'On Request'
     }
   },
   { 
-    label: '4 BHK Duplex Penthouse', 
-    img: masterplanImages.penthouse4 || '/images/masterplan/4BHK+4T2floorplan.webp.webp',
+    label: '3.5 BHK Residence', 
+    img: masterplanImages.bhk4 || '/images/masterplan/4BHK+4Tfloorplan.webp',
     details: {
-        saleable: '6,266 Sq.Ft.',
-        carpet: '3,730 Sq.Ft.'
+        saleable: '2,244 Sq.Ft.',
+        carpet: 'On Request'
     }
-  },
+  }
 ]
 
 const MasterPlan = ({ setIsOpen }) => {
@@ -91,21 +99,24 @@ const MasterPlan = ({ setIsOpen }) => {
           )}
 
           {activeTab === 'floor' && (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-[1240px] mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mx-auto">
               {plans.map((plan, idx) => (
                 <div key={idx} className="w-full bg-white rounded-md overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.1)] transition-transform hover:-translate-y-1 flex flex-col justify-between" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={idx * 100}>
-                  <div onClick={() => setLightboxImg(plan.img)} className="cursor-pointer relative h-[260px] overflow-hidden group bg-[#fdfbf7] flex items-center justify-center p-4">
+                  <div onClick={() => setIsOpen(true)} className="cursor-pointer relative h-[260px] overflow-hidden group bg-[#fdfbf7] flex items-center justify-center p-4">
                     <img 
                       src={plan.img} 
                       alt={plan.label} 
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" 
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 blur-[8px] opacity-70" 
                     />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <span className="bg-[#000242] text-white px-5 py-2.5 rounded-md font-semibold text-sm shadow-lg whitespace-nowrap">Enquire for Floor Plan</span>
+                    </div>
                   </div>
                   <div className="p-6 text-center border-t border-gray-100 bg-white flex-1 flex flex-col justify-center">
                     <h4 className="text-[20px] sm:text-[22px] text-[#000242] font-semibold mb-3">{plan.label}</h4>
                     <div className="flex flex-col gap-1.5">
-                      <p className="text-[15px] text-gray-600"><span className="font-semibold text-gray-800">Saleable Area </span>: {plan.details.saleable}</p>
-                      <p className="text-[15px] text-gray-600"><span className="font-semibold text-gray-800">Carpet Area </span>: {plan.details.carpet}</p>
+                      <p className="text-[15px] text-gray-600"><span className="font-semibold text-gray-800">Size</span>: {plan.details.saleable}</p>
+                      {/* <p className="text-[15px] text-gray-600"><span className="font-semibold text-gray-800">Size </span>: {plan.details.carpet}</p> */}
                     </div>
                   </div>
                 </div>

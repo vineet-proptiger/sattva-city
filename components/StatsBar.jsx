@@ -1,7 +1,7 @@
 const stats = [
-  { value: '92',    label: 'Acres Integrated Township' },
-  { value: '₹65L*', label: 'Starting Price' },
-  { value: '2 & 3', label: 'BHK Configurations' },
+  { value: '50',    label: 'Acres Integrated Township' },
+  { value: '₹1.86Cr*', label: 'Starting Price' },
+  { value: '2, 2.5, 3 & 3.5', label: 'BHK Configurations' },
   { value: 'G+20',  label: 'Tower Floors Structure' },
 ]
 
@@ -35,7 +35,7 @@ const StatsBar = () => (
         >
           <span style={{
             fontFamily: F_JOST,
-            fontSize: '40px',
+            fontSize: s.value.length > 5 ? '26px' : '40px',
             fontWeight: '700',
             color: '#fff',
             lineHeight: 1,
