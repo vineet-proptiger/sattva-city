@@ -27,7 +27,9 @@ const Footer = () => (
         </div>
         <p style={{ fontSize: '15px', color: '#fff', fontFamily: 'var(--font-poppins), sans-serif', lineHeight: 1.8, marginBottom: '24px', textAlign: 'justify' }}
           data-aos="fade-in" data-aos-delay="100">
-          Sattva Group presents Sattva City, Bangalore&apos;s premier luxury integrated township on Bengaluru Airport Road, near the toll gate, offering luxurious 2, 2.5, 3 & 3.5 BHK apartments across a sprawling 50-acre master-planned development. Thoughtfully curated with 84% open green spaces, four grand state-of-the-art clubhouses, an indoor temperature-controlled pool, and over 250+ world-class lifestyle amenities — Sattva City brings you a place where the city&apos;s convenience meets a quieter, lighter, and truly elevated way of living.
+          Sattva Group is a leading Indian real estate developer with a strong presence across residential, commercial, and integrated developments. Established in 1993 and headquartered in Bengaluru, the Group has built a reputation for delivering thoughtfully planned projects that combine quality, innovation, and modern design. With operations across multiple Indian cities, Sattva Group has successfully delivered numerous developments spanning residential communities, commercial spaces, and mixed-use projects.
+          <span style={{ display: 'block', height: '12px' }}></span>
+          Its approach focuses on customer-centric planning, sustainable development, and creating long-term value. Backed by more than three decades of industry experience, Sattva Group continues to expand its portfolio while maintaining its commitment to trust, excellence, and innovation.
         </p>
         
         {/* RERA Block */}
