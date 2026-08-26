@@ -209,7 +209,7 @@ const Overview = ({ setIsOpen }) => {
             <img 
               src={overviewImage} 
               alt="Sattva City Bangalore Overview" 
-              className="w-full h-auto rounded-xl shadow-2xl max-w-[500px] lg:max-w-[340px] xl:max-w-[360px] mx-auto object-cover transition-all duration-300"
+              className="w-full h-auto rounded-xl shadow-2xl max-w-[500px] lg:max-w-[380px] xl:max-w-[400px] mx-auto object-cover transition-all duration-300"
             />
           </div>
         </div>
