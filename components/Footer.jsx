@@ -28,8 +28,8 @@ const Footer = () => (
         <p style={{ fontSize: '15px', color: '#fff', fontFamily: 'var(--font-poppins), sans-serif', lineHeight: 1.8, marginBottom: '24px', textAlign: 'justify' }}
           data-aos="fade-in" data-aos-delay="100">
           Sattva Group is a leading Indian real estate developer with a strong presence across residential, commercial, and integrated developments. Established in 1993 and headquartered in Bengaluru, the Group has built a reputation for delivering thoughtfully planned projects that combine quality, innovation, and modern design. With operations across multiple Indian cities, Sattva Group has successfully delivered numerous developments spanning residential communities, commercial spaces, and mixed-use projects.
-          <span style={{ display: 'block', height: '12px' }}></span>
-          Its approach focuses on customer-centric planning, sustainable development, and creating long-term value. Backed by more than three decades of industry experience, Sattva Group continues to expand its portfolio while maintaining its commitment to trust, excellence, and innovation.
+          <span style={{ display: 'block', height: '8px' }}></span>
+          {/* Its approach focuses on customer-centric planning, sustainable development, and creating long-term value. Backed by more than three decades of industry experience, Sattva Group continues to expand its portfolio while maintaining its commitment to trust, excellence, and innovation. */}
         </p>
         
         {/* RERA Block */}
