@@ -38,7 +38,7 @@ const Footer = () => (
           <strong className="text-[12.5px] sm:text-[15px] text-white font-bold tracking-wider text-center break-all sm:break-normal max-w-full" style={{ fontFamily: F_JOST }}>PRM/KA/RERA/1251/472/PR/270226/008494</strong>
         </div>
       </div>
-
+  
       <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 py-4 px-6 border-t border-[#222] text-center sm:text-left max-w-[1200px] mx-auto">
         <p style={{ fontSize: '13px', color: '#888', fontFamily: F_SANS }}>
           &copy; 2026 Sattva City. All rights reserved.
